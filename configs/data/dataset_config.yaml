@@ -1,0 +1,23 @@
+# Dataset Source and Path Configuration
+paths:
+  project_root: "E:/DFU_Cross_Domain_Research"
+  raw_archives:
+    azh: "data/raw/AZH/archives/wound-segmentation-master.zip"
+    wseg: "data/raw/WSEG/archives/wseg_dataset.zip"
+    mendeley: "data/raw/MENDELEY/archives/Wound Image Dataset.zip"
+  extracted_directories:
+    azh: "data/interim/stage_3_1/extracted/AZH"
+    wseg: "data/interim/stage_3_1/extracted/WSEG"
+    mendeley: "data/interim/stage_3_1/extracted/MENDELEY"
+  extraction_manifests:
+    azh: "data/interim/stage_3_1/extraction_manifests/azh_extraction_manifest.csv"
+    wseg: "data/interim/stage_3_1/extraction_manifests/wseg_extraction_manifest.csv"
+    mendeley: "data/interim/stage_3_1/extraction_manifests/mendeley_extraction_manifest.csv"
+  processed_output: "data/processed"
+
+# Expected Archive SHA-256 Checksums
+archive_checksums:
+  azh: "15bf68722e5a293e6852443ed356d0155ad5be91cba7d792a7c668e7e7fe0eae"
+  wseg: "0a48dd1838305c4d518403010e94c6ee4b5e22b259740793c404cf7f5a975dcc"
+  mendeley: "00370cab8eebe941fb25c7d7fc0e8fd34fc513cb96a04e695d0b6b2c8610bd2c"
+

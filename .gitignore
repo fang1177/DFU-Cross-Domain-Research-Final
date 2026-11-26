@@ -1,0 +1,152 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution & packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# IDE / Editor configuration
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Logs and temporary experiment outputs
+logs/
+*.log
+results/temporary/
+
+# Model checkpoints & serialized weights
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.onnx
+*.engine
+*.h5
+
+# Dataset archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.tar.bz2
+*.7z
+*.rar
+
+# Medical images and extracted datasets (raw, interim, processed)
+data/raw/*
+data/interim/*
+data/processed/*
+
+# Preserve directory tracking files
+!.gitkeep
+!data/raw/**/.gitkeep
+!data/interim/**/.gitkeep
+!data/processed/**/.gitkeep
+
+# Explicitly preserve dataset manifests, metadata, documentation, and audit reports
+!data/manifests/
+!data/manifests/**
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution & packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# IDE / Editor configuration
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Logs and temporary experiment outputs
+logs/
+*.log
+results/temporary/
+
+# Model checkpoints & serialized weights
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.onnx
+*.engine
+*.h5
+
+# Dataset archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.tar.bz2
+*.7z
+*.rar
+
+# Medical images and extracted datasets (raw, interim, processed)
+data/raw/*
+data/interim/*
+data/processed/*
+
+# Preserve directory tracking files
+!.gitkeep
+!data/raw/**/.gitkeep
+!data/interim/**/.gitkeep
+!data/processed/**/.gitkeep
+
+# Explicitly preserve dataset manifests, metadata, documentation, and audit reports
+!data/manifests/
+!data/manifests/**
+
+
+# Additional security and environment exclusions
+**/credentials.json
+**/access_token
+**/kaggle.json
+**/.env
+**/.env.*
+**/.kaggle_backup/
+.venv_cuda/
+dfu-env/
+.kilo/

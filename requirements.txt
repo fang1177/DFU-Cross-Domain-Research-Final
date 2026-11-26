@@ -1,0 +1,36 @@
+# ==============================================================================
+# Initial Core Dependencies for DFU Cross-Domain Segmentation Research
+# ==============================================================================
+# NOTE ON PYTORCH INSTALLATION:
+# PyTorch, TorchVision, and Torchaudio are intentionally omitted from this file.
+# They must be installed separately according to your target compute platform
+# (CUDA version or CPU) following official instructions at: https://pytorch.org/get-started/locally/
+# Example (CUDA 12.1):
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+# ==============================================================================
+
+# Scientific computing & data structures
+numpy>=1.24.0
+scipy>=1.10.0
+pandas>=2.0.0
+
+# Computer vision & image processing (headless avoids GUI/libGL dependencies)
+opencv-python-headless>=4.8.0
+pillow>=10.0.0
+albumentations>=1.3.1
+
+# Metrics & classical learning utilities
+scikit-learn>=1.3.0
+
+# Visualization & plotting (figures, training curves)
+matplotlib>=3.7.0
+
+# Configuration & experiment tracking
+pyyaml>=6.0
+
+# Utilities
+tqdm>=4.65.0
+
+# Testing
+pytest>=7.4.0
+

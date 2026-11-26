@@ -1,0 +1,49 @@
+# Cohort Partition and Sampling Specifications
+cohorts:
+  source_training:
+    dataset_key: "AZH"
+    subsets: ["AZH_Challenge_Train", "AZH_Medetec_Train"]
+    total_pairs: 961
+    unique_image_hashes: 945
+    multi_mask_clusters: 15
+    identical_pair_exclusions: ["0335"]
+    sampling_protocol: "two_stage_cluster_balanced"
+  
+  internal_validation:
+    dataset_key: "AZH"
+    subsets: ["AZH_Challenge_Val"]
+    total_pairs: 193
+    unique_image_hashes: 192
+    multi_mask_clusters: 1
+    training_leakage_excluded_clusters: 7
+  
+  primary_target_native:
+    dataset_key: "MENDELEY"
+    total_unique_images: 2186
+    selection_rule: "primary_operational_reference_annotation (lowest pair ID)"
+    status: "RETAINED_PRIMARY_BENCHMARK"
+  
+  target_mismatched_diagnostic:
+    dataset_key: "MENDELEY"
+    total_unique_images: 322
+    dimensions: "331x331 image vs 224x224 mask"
+    status: "QUARANTINED_PENDING_STAGE_3_1C_VALIDATION"
+  
+  target_pooled_lineage:
+    dataset_key: "MENDELEY_WSEG"
+    total_unique_images: 2508
+    total_annotation_records: 2686
+    multi_mask_clusters: 139
+    status: "SECONDARY_DESCRIPTIVE_ONLY"
+  
+  healthy_controls:
+    dataset_key: "MENDELEY"
+    subset: "Nomal"
+    total_images: 2757
+    unique_image_hashes: 2757
+    mask_semantics: "derived_all_background_zero"
+    evaluation_partition: "SEPARATE_SPECIFICITY_BENCHMARK"
+
+reproducibility:
+  seeds: [42, 1337, 2024]
+
